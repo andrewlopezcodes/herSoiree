@@ -1,4 +1,3 @@
-
 const env = 'development';
 const config = require('./knexfile.js')[env];
 const knex = require('knex')(config);
@@ -15,6 +14,12 @@ app.use(express.json());
 app.get('/', (request, response)=> {
   response.send(`herSoiree: Listening on port no.${PORT}`)
 });
+
+
+
+
+
+
 
 
 app.listen(PORT, ()=>{
